@@ -1,0 +1,60 @@
+.header{
+    width: 100%;
+    background-color: blueviolet;
+    height: 120px;
+}
+
+.logoInput{
+    position: absolute;
+    left: 10%;
+    display: flex;
+    background-color: aqua;
+    width: 80%;
+    height: 75px;
+}
+
+.logo{
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 20%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+}
+
+.header .searchBar{
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    width: 50%;
+    height: 50px;
+    background-color: beige;
+    
+}
+
+.fieldset{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 2px solid green;
+}
+.search{
+    width: 90%;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.search:focus{
+    outline: none;
+}
+
+.searchBtn{
+    width: 10%;
+    height: 47px;
+    color: white;
+    background-color: green;
+    border: 0;
+    line-height: 0;
+}
