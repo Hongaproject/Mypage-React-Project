@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     background-color: blueviolet;
-    height: 120px;
+    height: 200px;
 }
 
 .logoInput{
@@ -57,4 +57,24 @@
     background-color: green;
     border: 0;
     line-height: 0;
+}
+
+.sidebar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 13%;
+    background-color: brown;
+    justify-content: center;
+}
+
+.sidebarUl{
+    display: flex;
+    background-color: chartreuse;
+    width: 40%;
+    padding: 20px;
+}
+
+.sidebarUl li{
+    margin-left: 80px;
 }

@@ -5,11 +5,9 @@ import './App.css';
 
 function App() {
   return (
-    <body>
       <Layout>
         <Main />
       </Layout>
-    </body>
   );
 }
 

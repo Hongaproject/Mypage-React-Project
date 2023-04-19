@@ -7,8 +7,23 @@
 }
 
 .footerF{
+    display: flex;
     flex: 2;
+    justify-content: center;
 }
+.footerFul{
+    background-color: aqua;
+    text-align: left;
+}
+
 .footerL{
+    display: flex;
     flex: 1;
+}
+.footerLul{
+    background-color: beige;
+    display: flex;
+}
+.footerLul li{
+    margin-left: 30px;
 }
