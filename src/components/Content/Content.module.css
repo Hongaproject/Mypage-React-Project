@@ -1,0 +1,26 @@
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+}
+
+.News{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+.Weather{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+.Movie{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+.Shop{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
