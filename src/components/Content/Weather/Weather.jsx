@@ -42,6 +42,7 @@ function Weather () {
     return(
         <div className={styles.weatherMain}>
             <div>
+                <strong>시계, 날씨</strong>
                 <div>{toDay()}</div>
                 <div>{weather?.name}</div>
                 <div>{weather?.main.temp}</div>
