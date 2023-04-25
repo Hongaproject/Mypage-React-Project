@@ -11,13 +11,14 @@ function Weather () {
             let lat = position.coords.latitude;
             let lon = position.coords.longitude;
             getWeatherCurrentLocation(lat, lon);
+            console.log(lat ,lon);
+            
         });
     };
 
     const getWeatherCurrentLocation = async (lat, lon) => {
         const apiKey = process.env.REACT_APP_WEATHER_KEY;
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-        console.log(url);
 
         let response = await fetch(url);
         let data = await response.json();
