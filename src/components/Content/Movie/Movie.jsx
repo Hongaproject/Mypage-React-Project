@@ -1,10 +1,11 @@
-import styles from "./Movie.module.css";
+import { HashRouter } from "react-router-dom";
+
 
 function Movie () {
     return(
-        <div className={styles.movieMain}>
-            Movie
-        </div>
+        <HashRouter>
+
+        </HashRouter>
     );
 }
 
