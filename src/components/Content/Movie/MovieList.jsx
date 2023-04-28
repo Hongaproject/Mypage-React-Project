@@ -1,14 +1,12 @@
-import { useState } from "react";
+import React from "react";
 
 class MovieList extends React.Component {
-    state = {
-      isLoading: true,
-      movies: [],
-      value: ""
-    };
+    render() {
+        return 
+        <div>
 
-render() {
-    return <div></div>
+        </div>
+    }
 }
 
 export default MovieList;
