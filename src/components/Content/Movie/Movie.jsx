@@ -1,10 +1,10 @@
-import { HashRouter } from "react-router-dom";
+import { HashRouter} from "react-router-dom";
 
 
 function Movie () {
     return(
         <HashRouter>
-
+            
         </HashRouter>
     );
 }
