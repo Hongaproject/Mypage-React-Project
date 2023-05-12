@@ -11,7 +11,6 @@ function MovieList () {
 
     const getMovies = async() => {
         const json = await (await fetch(`http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${KEY}&targetDt=${DATE}`)).json();
-        
         setMovies(json.boxOfficeResult.dailyBoxOfficeList);
         setLoading(false);
     }
