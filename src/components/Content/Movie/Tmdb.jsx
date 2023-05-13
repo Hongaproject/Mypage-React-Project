@@ -17,16 +17,16 @@ function Tmdb() {
     //     getNowPlaying();
     // }, []);
 
-    const [list, setlist] = useState([]);
 
     const getNowPlaying = async () => {
-        const apiKey = process.env.REACT_APP_TMDBMOVIE_KEY;
-        const url = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=ko-KR&page=1`);
+        // const apiKey = process.env.REACT_APP_TMDBMOVIE_KEY;
+        const url = await axios.get(`
+        https://api.themoviedb.org/3/movie/popular?api_key=31bcb62887847e7c9f52dd97f9fec49&language=ko-KR&page=1`);
         console.log(url);
 
         let response = await fetch(url);
         let data = await response.json();
-        setlist(data.result);
+        console.log(data);
     }
 
     useEffect(() => {

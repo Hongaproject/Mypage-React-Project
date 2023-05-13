@@ -34,6 +34,7 @@ class MovieTest1 extends Component {
           rank={dailyBoxOfficeList.rank}
           movieNm={dailyBoxOfficeList.movieNm}
           key={index}
+          thumbUrl={dailyBoxOfficeList.thumbUrl}
         />
       );
     });
@@ -42,6 +43,7 @@ class MovieTest1 extends Component {
  
   _getMovies = async () => {
     const movies = await this._callApi();
+    console.log(movies);
     this.setState({
       movies
     });
@@ -50,7 +52,7 @@ class MovieTest1 extends Component {
   _callApi = () => {
     return fetch(
       `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${key}&targetDt=${res}&itemPerPage=10`
-    )
+      )
       .then(a => a.json())
       .then(json => json.boxOfficeResult.dailyBoxOfficeList)
       .catch(err => console.log(err));

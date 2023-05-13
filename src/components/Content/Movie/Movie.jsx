@@ -8,9 +8,9 @@ function Movie () {
 
     return (
         <div>
-            {/* <MovieTest1 />
-            <MovieList />
-            <MovieSearch /> */}
+            {/* <MovieTest1 /> */}
+            {/* <MovieList /> */}
+            {/* <MovieSearch /> */}
             {/* <Tmdb /> */}
             <TmdbM />
         </div>
