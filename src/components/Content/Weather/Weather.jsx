@@ -11,7 +11,7 @@ function Weather () {
             let lat = position.coords.latitude;
             let lon = position.coords.longitude;
             getWeatherCurrentLocation(lat, lon);
-            console.log(lat ,lon);
+            // console.log(lat ,lon);
             
         });
     };
@@ -23,6 +23,7 @@ function Weather () {
         let response = await fetch(url);
         let data = await response.json();
         setWeather(data);
+        console.log(data.weather[0].icon);
     };
 
     useEffect(() => {

@@ -26,7 +26,8 @@ function News () {
         //         {news && <textarea rows={9} value={JSON.stringify(news, null, 2)} readOnly={true}/>}
         //     </div>
         // </div>
-        <NewsList />
+        // <NewsList />
+        <div></div>
     );
 }
 

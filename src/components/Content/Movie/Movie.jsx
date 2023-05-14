@@ -8,11 +8,11 @@ function Movie () {
 
     return (
         <div>
-            <MovieTest1 />
+            {/* <MovieTest1 /> */}
             {/* <MovieList /> */}
             {/* <MovieSearch /> */}
             {/* <Tmdb /> */}
-            <TmdbM />
+            {/* <TmdbM /> */}
         </div>
     );
 }
