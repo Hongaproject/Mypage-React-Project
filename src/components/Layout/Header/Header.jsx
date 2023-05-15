@@ -22,10 +22,13 @@ function Header () {
             </div>
             <div className={styles.sidebar}>
                 <ul className={styles.sidebarUl}>
+                    <li><button>네이버</button></li>
                     <li><button>증권</button></li>
                     <li><button>지도</button></li>
                     <li><button>날씨</button></li>
                     <li><button>유튜브</button></li>
+                    <li><button>깃허브</button></li>
+                    <li><button>노션</button></li>
                 </ul>
             </div>
         </div>
