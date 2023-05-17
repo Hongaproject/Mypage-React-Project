@@ -5,6 +5,7 @@ import styles from "./Weather.module.css";
 function Weather () {
 
     const [weather, setWeather] = useState(null);
+    const [wicon, setWicon] = useState(null);
 
     const getCurrentLocation = () => {
         navigator.geolocation.getCurrentPosition((position) => {
@@ -19,16 +20,28 @@ function Weather () {
     const getWeatherCurrentLocation = async (lat, lon) => {
         const apiKey = process.env.REACT_APP_WEATHER_KEY;
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+        // const url = `api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=7&appid=${apiKey}`; 
+
 
         let response = await fetch(url);
         let data = await response.json();
         setWeather(data);
-        console.log(data.weather[0].icon);
+        // console.log(data);
+        // console.log(data.weather[0].icon);
+        setWicon(data.weather[0].icon);
     };
 
     useEffect(() => {
         getCurrentLocation();
     }, []);
+
+    const getWeatherIcon = () => {
+        let iconurl = "http://openweathermap.org/img/w/" + wicon + ".png";
+
+        return <img src={iconurl}/>
+    }
+
+    
 
     const toDay = () =>{ 
         let now = new Date();
@@ -44,12 +57,13 @@ function Weather () {
     return(
         <div className={styles.weatherMain}>
             <div>
-                <strong>시계, 날씨</strong>
+                <strong>날짜, 날씨</strong>
                 <div>{toDay()}</div>
                 <div>{weather?.name}</div>
-                <div>{weather?.main.temp}</div>
+                <div>{getWeatherIcon()}</div>
+                <div>{weather?.main.temp} ℃</div>
                 <div>{weather?.weather[0].description}</div>
-                <div>{weather?.wind.speed}</div>
+                <div>{weather?.main.humidity}</div>
             </div>
         </div>
     );

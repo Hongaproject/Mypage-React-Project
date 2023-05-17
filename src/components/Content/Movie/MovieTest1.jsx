@@ -35,6 +35,7 @@ class MovieTest1 extends Component {
           movieNm={dailyBoxOfficeList.movieNm}
           key={index}
           thumbUrl={dailyBoxOfficeList.thumbUrl}
+          openDt={dailyBoxOfficeList.openDt}
         />
       );
     });

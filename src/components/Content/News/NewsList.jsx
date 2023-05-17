@@ -36,9 +36,11 @@ function NewsList () {
 
     return(
         <NewsListStyle>
-            {articles.map(article => {
+            {articles
+            .map(article => {
                 return<NewsItem Key={article.url} article={article}/>;
             })}
+
         </NewsListStyle>
     );
 }
