@@ -12,7 +12,7 @@ function Movie () {
             {/* <MovieList /> */}
             {/* <MovieSearch /> */}
             {/* <Tmdb /> */}
-            {/* <TmdbM /> */}
+            <TmdbM />
         </div>
     );
 }

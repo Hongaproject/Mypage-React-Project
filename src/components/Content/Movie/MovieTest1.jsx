@@ -52,8 +52,9 @@ class MovieTest1 extends Component {
  
   _callApi = () => {
     return fetch(
-      `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${key}&targetDt=${res}&itemPerPage=10`
+      `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${key}&targetDt=${res}&itemPerPage=5`
       )
+      
       .then(a => a.json())
       .then(json => json.boxOfficeResult.dailyBoxOfficeList)
       .catch(err => console.log(err));
@@ -63,6 +64,7 @@ class MovieTest1 extends Component {
     const { movies } = this.state;
     return (
       <div className={movies ? "MovieTest1" : "MovieTest1-loading"}>
+        <h1>현재 인기 순위</h1>
         {movies ? this._renderMovies() : "로딩중 ..."}
       </div>
     );

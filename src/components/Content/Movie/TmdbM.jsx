@@ -36,7 +36,8 @@ function TmdbM() {
     
     return(
         <div>
-            {movies.map((movie) => (
+            <h1>현재 상역작</h1>
+            {movies.slice(0,5).map((movie) => (
                 <TmdbI 
                     key={movie.id}
                     title={movie.title}

@@ -52,6 +52,7 @@ function NewsItem ({article}) {
                     </a>
                 </h2>
                 <p>{description}</p>
+                <br />
             </div>
         </NewsItemStyle>
     );

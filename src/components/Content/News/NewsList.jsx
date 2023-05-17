@@ -21,6 +21,7 @@ function NewsList () {
                 const apiKey = process.env.REACT_APP_NEWS_KEY;
                 const response =  await axios.get(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${apiKey}`);
                 setArticles(response.data.articles);
+                console.log(response);
             }
             catch(err){
                 console.log(err);
@@ -34,13 +35,12 @@ function NewsList () {
         return null;
     }
 
+
     return(
         <NewsListStyle>
-            {articles
-            .map(article => {
+            {articles.slice(0,10).map(article => {
                 return<NewsItem Key={article.url} article={article}/>;
             })}
-
         </NewsListStyle>
     );
 }
