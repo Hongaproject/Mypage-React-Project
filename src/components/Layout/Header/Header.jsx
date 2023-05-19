@@ -17,11 +17,8 @@ function Header () {
                         <fieldset className={styles.fieldset}>
                             <div>
                                 <form action="https://www.google.co.kr/search" method="GET">    
-                                        {/* <input className={styles.searchPut} name="q" type="text" placeholder="검색 또는 URL입력" required />  */}
                                         <input name="q" type="text" className={styles.search} placeholder="검색어를 입력해 주세요." required />
                                 </form>
-                                {/* <input type="text" className={styles.search} required/> */}
-                                {/* <button className={styles.searchBtn}>버튼</button> */}
                             </div>
                         </fieldset>
                     </form>

@@ -16,7 +16,7 @@ function Shop () {
 
     // const navigate = useNavigate();
 
-    // const clickShops = () => {
+    // const clickShopMove = () => {
     //     navigate("/Shopm");
     // }
 
@@ -28,6 +28,11 @@ function Shop () {
 
     // }
 
+    const navigate = useNavigate();
+
+    const clickShopMove = () => {
+        navigate("/Shopm");
+    }
 
     return(
         <div className={styles.shopMain}>
@@ -43,7 +48,10 @@ function Shop () {
             {/* <Link to="/shop/sub">메인</Link> */}
             {/* <Shopc onClick={clickShops}>더보기</Shopc> */}
 
-            <Link to="/shpom"><button>서브</button></Link>
+            {/* <Link to="/Shpom"><button>서브</button></Link> */}
+            <button onClick={clickShopMove}>더보기</button>
+
+
         </div>
     );
 }
