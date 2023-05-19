@@ -3,7 +3,9 @@ import News from "./News/News";
 import Shop from "./Shop/Shop";
 import Weather from "./Weather/Weather";
 import styles from "./Content.module.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Shopc from "./Shop/Shopc";
+import Shopm from "./Shop/Shopm";
 
 function Content () {
     return(
@@ -14,12 +16,16 @@ function Content () {
             </div>
             <div className={styles.content}>
                 <div className={styles.Movie}><Movie /></div>               
-                <div className={styles.Shop}><Shop /></div>
-                {/* <BrowserRouter>
-                    <Routes>          
-                        <Route path="/shop" element={<Shop />}></Route>
+                {/* <div className={styles.Shop}><Shop /></div> */}
+            <BrowserRouter>
+                    <Routes>         
+                        <Route path="/" element={<Shop />}/>
+                        <Route path="/shpom" element={<Shopm />}/>
+                        {/* <Shopm /> */}
+                        {/* <Route path="/shop/sub" element={<Shopc />}/> */}
+                        {/* <Shopc /> */}
                     </Routes>
-                </BrowserRouter> */}
+            </BrowserRouter>
             </div>
         </div>
     );

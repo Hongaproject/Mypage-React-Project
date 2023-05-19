@@ -1,3 +1,4 @@
+import styles from "./Movie.module.css";
 import MovieList from "./MovieList";
 import MovieSearch from "./MovieSearch";
 import MovieTest1 from "./MovieTest1";

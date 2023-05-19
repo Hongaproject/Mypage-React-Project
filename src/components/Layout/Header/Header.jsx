@@ -1,6 +1,9 @@
 import styles from './Header.module.css';
 
 function Header () {
+
+    const url = "https://www.naver.com/";
+
     return (
         <div className={styles.header}>
             This Header
@@ -13,8 +16,12 @@ function Header () {
                     <form action="">
                         <fieldset className={styles.fieldset}>
                             <div>
-                                <input type="text" className={styles.search} required/>
-                                <button className={styles.searchBtn}>버튼</button>
+                                <form action="https://www.google.co.kr/search" method="GET">    
+                                        {/* <input className={styles.searchPut} name="q" type="text" placeholder="검색 또는 URL입력" required />  */}
+                                        <input name="q" type="text" className={styles.search} placeholder="검색어를 입력해 주세요." required />
+                                </form>
+                                {/* <input type="text" className={styles.search} required/> */}
+                                {/* <button className={styles.searchBtn}>버튼</button> */}
                             </div>
                         </fieldset>
                     </form>
@@ -22,7 +29,7 @@ function Header () {
             </div>
             <div className={styles.sidebar}>
                 <ul className={styles.sidebarUl}>
-                    <li><button>네이버</button></li>
+                    <li><button onClick={()=> {window.open(url)}}>네이버</button></li>
                     <li><button>증권</button></li>
                     <li><button>지도</button></li>
                     <li><button>날씨</button></li>
