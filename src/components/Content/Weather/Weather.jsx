@@ -19,9 +19,8 @@ function Weather () {
 
     const getWeatherCurrentLocation = async (lat, lon) => {
         const apiKey = process.env.REACT_APP_WEATHER_KEY;
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=kr&appid=${apiKey}&units=metric`;
         // const url = `api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=7&appid=${apiKey}`; 
-
 
         let response = await fetch(url);
         let data = await response.json();
@@ -55,15 +54,15 @@ function Weather () {
     } 
 
     return(
-        <div className={styles.weatherMain}>
+        <div>
             <div>
-                <strong>날짜, 날씨</strong>
+                <strong>오늘의 날씨</strong>
                 <div>{toDay()}</div>
                 <div>{weather?.name}</div>
                 <div>{getWeatherIcon()}</div>
-                <div>{weather?.main.temp} ℃</div>
-                <div>{weather?.weather[0].description}</div>
-                <div>{weather?.main.humidity}</div>
+                <div>온도 : {weather?.main.temp} ℃</div>
+                {/* <div>{weather?.weather[0].description}</div> */}
+                <div>습도 : {weather?.main.humidity}%</div>
             </div>
         </div>
     );

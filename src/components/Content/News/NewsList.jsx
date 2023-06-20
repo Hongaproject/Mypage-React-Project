@@ -16,7 +16,6 @@ function NewsList () {
 
     useEffect(() => {
         const fetchData = async () => {
-
             try{
                 const apiKey = process.env.REACT_APP_NEWS_KEY;
                 const response =  await axios.get(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${apiKey}`);
@@ -42,6 +41,7 @@ function NewsList () {
                 return<NewsItem Key={article.url} article={article}/>;
             })}
         </NewsListStyle>
+        
     );
 }
 

@@ -34,7 +34,6 @@ class MovieTest1 extends Component {
           rank={dailyBoxOfficeList.rank}
           movieNm={dailyBoxOfficeList.movieNm}
           key={index}
-          thumbUrl={dailyBoxOfficeList.thumbUrl}
           openDt={dailyBoxOfficeList.openDt}
         />
       );
@@ -44,7 +43,6 @@ class MovieTest1 extends Component {
  
   _getMovies = async () => {
     const movies = await this._callApi();
-    console.log(movies);
     this.setState({
       movies
     });
@@ -64,7 +62,7 @@ class MovieTest1 extends Component {
     const { movies } = this.state;
     return (
       <div className={movies ? "MovieTest1" : "MovieTest1-loading"}>
-        <h1>현재 인기 순위</h1>
+        <h1>현재 상영 영화 순위</h1>
         {movies ? this._renderMovies() : "로딩중 ..."}
       </div>
     );

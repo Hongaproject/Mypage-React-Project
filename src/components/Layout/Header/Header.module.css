@@ -75,6 +75,7 @@
     background-color: chartreuse;
     width: 63%;
     padding: 20px;
+    list-style: none;
 }
 
 .sidebarUl li{

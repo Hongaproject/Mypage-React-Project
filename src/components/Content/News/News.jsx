@@ -1,32 +1,22 @@
-// import { useState } from "react";
-// import styles from "./News.module.css";
-// import axios from "axios";
-
+import { useState } from "react";
 import NewsList from "./NewsList";
-function News () {
-    // const [news, setNews] = useState(null);
+import { useEffect } from "react";
 
-    // const Click = async () => {
-    //     try{
-    //         const apiKey = process.env.REACT_APP_NEWS_KEY;
-    //         const response = await axios.get (`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${apiKey}`);
-    //         setNews(response, news);
-    //     }
-    //     catch(err){
-    //         console.log(err);
-    //     }
-    // }
+function News () {
+    
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoading(false);
+        },500);
+    }, [])
 
     return(
-        // <div className={styles.newsMain}>
-        //     <div>
-        //         <div>
-        //             <button onClick={Click}>불러오기</button>
-        //         </div>
-        //         {news && <textarea rows={9} value={JSON.stringify(news, null, 2)} readOnly={true}/>}
-        //     </div>
-        // </div>
-        <NewsList />
+        <div>
+            <h2>오늘의 뉴스</h2>
+            { loading ? 'loading...' : <NewsList /> }
+        </div>
     );
 }
 

@@ -19,6 +19,9 @@ function Header () {
                                 <form action="https://www.google.co.kr/search" method="GET">    
                                         <input name="q" type="text" className={styles.search} placeholder="검색어를 입력해 주세요." required />
                                 </form>
+                                {/* <form action="https://search.naver.com/search.naver" method="GET">    
+                                        <input name="query" type="text" className={styles.search} placeholder="검색어를 입력해 주세요." required />
+                                </form> */}
                             </div>
                         </fieldset>
                     </form>

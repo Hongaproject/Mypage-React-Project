@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import styled  from "styled-components";
 
 const NewsItemStyle = styled.div`
@@ -35,7 +37,7 @@ const NewsItemStyle = styled.div`
 function NewsItem ({article}) {
 
     const {title, description, url, urlToImage} = article;
-    
+
     return(
         <NewsItemStyle>
             {urlToImage && (
