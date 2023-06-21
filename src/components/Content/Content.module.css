@@ -1,26 +1,30 @@
 .content{
     display: flex;
     justify-content: center;
-    padding: 120px;
 }
 
 .News{
     display: flex;
-    flex: 2;
     justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    margin-right: 60px;
 }
 .Weather{
     display: flex;
-    flex: 2;
     justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
-/* .Movie{
+.Movie{
     display: flex;
-    flex: 2;
     justify-content: center;
-} */
+    padding-bottom: 60px;
+    margin-right: 60px;
+}
 .Shop{
     display: flex;
-    flex: 2;
     justify-content: center;
+    padding-bottom: 60px;
+    margin-left: 60px;
 }

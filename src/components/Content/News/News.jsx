@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NewsList from "./NewsList";
 import { useEffect } from "react";
+import styles from "./News.module.css";
 
 function News () {
     
@@ -13,8 +14,8 @@ function News () {
     }, [])
 
     return(
-        <div>
-            <h2>오늘의 뉴스</h2>
+        <div className={styles.newsMain}>
+            <h2 className={styles.title}>오늘의 뉴스</h2>
             { loading ? 'loading...' : <NewsList /> }
         </div>
     );

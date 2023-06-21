@@ -1,6 +1,9 @@
 .newsMain{
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.title{
+    margin: 0;
+    margin-bottom: 10px;
 }

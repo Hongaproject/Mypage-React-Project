@@ -6,8 +6,8 @@ function Footer () {
             <div className={styles.footerF}>
                 <ul className={styles.footerFul}>
                     <strong>문의 사항</strong>
-                    <li>xxxxxxx@naver.com</li>
-                    <li>COPYRIGHT 2023 Honga. All Rights Reserved.</li>
+                    <li>tkwlscjq13@naver.com</li>
+                    <li>COPYRIGHT 2023 HSW. All Rights Reserved.</li>
                 </ul>
             </div>
             <div className={styles.footerL}>
