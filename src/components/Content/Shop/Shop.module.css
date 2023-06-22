@@ -4,10 +4,10 @@ img{
 
 .shopMain{
     text-align: center;
-    border: 1px solid black;
     border-radius: 2rem;
     padding: 20px;
-    
+    box-shadow: 2px 2px 2px 2px gray;
+    /* background-color: #f0f0f0; */
 }
 
 .btn1{
@@ -41,3 +41,4 @@ img{
     background-color: #c0392b;
     transition: all 0.6s;
 }
+

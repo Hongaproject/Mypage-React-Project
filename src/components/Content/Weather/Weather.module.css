@@ -1,9 +1,12 @@
 .weatherMain{
-    /* background-color: aqua; */
-    border: 1px solid black;
     padding: 20px;
     height: 20%;
     border-radius: 2rem;
+    box-shadow: 2px 2px 2px 2px gray;
+    /* background: linear-gradient(lightCyan, skyBlue, deepSkyBlue); */
+    /* background: linear-gradient(deepSkyBlue, skyBlue, lightCyan); */
+    /* background-color: #f0f0f0; */
+
 }
 
 .titleh2{
@@ -14,7 +17,6 @@
 
 .name{
     font-size: 20px;
-    
 }
 
 .icon{
