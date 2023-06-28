@@ -1,6 +1,5 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import styled  from "styled-components";
+
 
 const NewsItemStyle = styled.div`
     display: flex;
@@ -19,10 +18,11 @@ const NewsItemStyle = styled.div`
     .contents {
     h2 {
         margin: 0;
-        
-        a {
-        color: #000;
-        }
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
     }
     
     p   {
@@ -32,6 +32,8 @@ const NewsItemStyle = styled.div`
         white-space: normal;
         }
     }
+
+            
 `;
 
 function NewsItem ({article}) {
@@ -42,16 +44,14 @@ function NewsItem ({article}) {
         <NewsItemStyle>
             {urlToImage && (
                 <div className={"newsurl"}>
-                    <a href={url} target={"_blank"} rel={"noopener noreferrer"}>
+                    <a href={url} target="_blank" rel={"noopener noreferrer"}>
                         <img src={urlToImage} alt={"newsurl"}/>
                     </a>
                 </div>
             )}
             <div className={"contents"}>
                 <h2>
-                    <a href={url} target={"_blank"} rel={"noopener noreferrer"}>
-                        {title}
-                    </a>
+                    {title}
                 </h2>
                 <p>{description}</p>
                 <br />

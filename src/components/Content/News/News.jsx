@@ -10,12 +10,12 @@ function News () {
     useEffect(()=>{
         setTimeout(()=>{
             setLoading(false);
-        },500);
+        },300);
     }, [])
 
     return(
         <div className={styles.newsMain}>
-            <h2 className={styles.title}>오늘의 뉴스</h2>
+            <h2 className={styles.title} title="이미지를 클릭해 주세요">오늘의 뉴스</h2>
             { loading ? 'loading...' : <NewsList /> }
         </div>
     );

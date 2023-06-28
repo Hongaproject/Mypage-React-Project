@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MovieTest2 from "./MovieTest2";
+import styles from "./Movie.module.css";
 
 const key = process.env.REACT_APP_MOVIE_KEY;
  
@@ -61,8 +62,9 @@ class MovieTest1 extends Component {
   render() {
     const { movies } = this.state;
     return (
-      <div className={movies ? "MovieTest1" : "MovieTest1-loading"}>
+      <div>
         <h1>현재 상영 영화 순위</h1>
+        <button className={styles.btn} onClick={()=> window.open("https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%98%84%EC%9E%AC%EC%83%81%EC%98%81%EC%98%81%ED%99%94&oquery=%EC%98%81%ED%99%94&tqi=i5evAsprvTVssf%2FmKtwssssstL0-412076")}>현재 상영중인 영화 더 알아보기</button>
         {movies ? this._renderMovies() : "로딩중 ..."}
       </div>
     );

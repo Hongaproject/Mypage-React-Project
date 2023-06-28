@@ -37,8 +37,8 @@ function NewsList () {
 
     return(
         <NewsListStyle>
-            {articles.slice(0,5).map(article => {
-                return<NewsItem Key={article.url} article={article}/>;
+            {articles.slice(0,5).map((article, index) => {
+                return<NewsItem Key={index} article={article}/>;
             })}
         </NewsListStyle>
         
