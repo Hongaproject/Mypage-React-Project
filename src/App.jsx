@@ -21,6 +21,7 @@ function App() {
     left: 0;
     right: 0;
   `
+  
   return (
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
