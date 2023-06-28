@@ -59,26 +59,26 @@ function Shopm() {
             </Title>
                 <Shops>
                     <h3>쇼핑몰</h3>
-                        <a href="https://www.musinsa.com/" target="_blank"><img src="/musinsaT.png" alt="photo" /></a>
-                        <a href="https://kream.co.kr/" target="_blank"><img src="/kreamT.png" alt="photo" /></a>
-                        <a href="https://www.lookpin.co.kr/" target="_blank"><img src="/lookpin.png" alt="photo" /></a>
-                        <a href="https://shopping.naver.com/home" target="_blank"><img src="/navers.png" alt="photo" /></a>
+                        <a href="https://www.musinsa.com/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/musinsaT.png" alt="photo" /></a>
+                        <a href="https://kream.co.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/kreamT.png" alt="photo" /></a>
+                        <a href="https://www.lookpin.co.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/lookpin.png" alt="photo" /></a>
+                        <a href="https://shopping.naver.com/home" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/navers.png" alt="photo" /></a>
                 </Shops>
                 <Ofpen>
                     <h3>먹거리 및 생필품</h3>
-                        <a href="https://shopping.naver.com/home" target="_blank"><img src="/navers.png" alt="photo" /></a>
-                        <a href="https://www.tmon.co.kr/" target="_blank"><img src="/tmonT.png" alt="photo" /></a>
-                        <a href="https://www.coupang.com/" target="_blank"><img src="/coupangT.png" alt="photo" /></a>
+                        <a href="https://shopping.naver.com/home" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/navers.png" alt="photo" /></a>
+                        <a href="https://www.tmon.co.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/tmonT.png" alt="photo" /></a>
+                        <a href="https://www.coupang.com/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/coupangT.png" alt="photo" /></a>
                 </Ofpen>
                 <Travel>
                     <h3>여행</h3>
-                        <a href="https://korean.visitkorea.or.kr/" target="_blank"><img src="/travelT.png" alt="photo" /></a>
-                        <a href="#" target="_blank"><img src="/air.png" alt="photo" /></a>
-                        <a href="#" target="_blank"><img src="/expedia.png" alt="photo" /></a>
-                        <a href="https://www.agoda.com/ko-kr/" target="_blank"><img src="/agoda.png" alt="photo" /></a>
-                        <a href="#" target="_blank"><img src="/yanolja.png" alt="photo" /></a>
-                        <a href="#" target="_blank"><img src="/here.png" alt="photo" /></a>
-                        <a href="#" target="_blank"><img src="/daily.png" alt="photo" /></a>
+                        <a href="https://korean.visitkorea.or.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/travelT.png" alt="photo" /></a>
+                        <a href="https://www.airbnb.co.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/air.png" alt="photo" /></a>
+                        <a href="https://www.expedia.co.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/expedia.png" alt="photo" /></a>
+                        <a href="https://www.agoda.com/ko-kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/agoda.png" alt="photo" /></a>
+                        <a href="https://www.yanolja.com/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/yanolja.png" alt="photo" /></a>
+                        <a href="https://www.goodchoice.kr/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/here.png" alt="photo" /></a>
+                        <a href="https://www.dailyhotel.com/" target="_blank"><img src="https://hongaproject.github.io/Mypage-React-Project/daily.png" alt="photo" /></a>
                 </Travel>
         </Container>
     );

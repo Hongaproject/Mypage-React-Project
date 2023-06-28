@@ -26,13 +26,13 @@ function Header () {
             </div>
             <div className={styles.sidebar}>
                 <ul className={styles.sidebarUl}>
-                    <li><button onClick={()=> window.open(stock)}><img src="/stock24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(map)}><img src="/map24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(weather)}><img src="/weather24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(youtube)}><img src="/youtube24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(github)}><img src="/github24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(notion)}><img src="/notion24.png" alt="stock"/></button></li>
-                    <li><button onClick={()=> window.open(tstory)}><img src="/tstory24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(stock)}><img src="https://hongaproject.github.io/Mypage-React-Project/stock24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(map)}><img src="https://hongaproject.github.io/Mypage-React-Project//map24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(weather)}><img src="https://hongaproject.github.io/Mypage-React-Project//weather24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(youtube)}><img src="https://hongaproject.github.io/Mypage-React-Project//youtube24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(github)}><img src="https://hongaproject.github.io/Mypage-React-Project//github24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(notion)}><img src="https://hongaproject.github.io/Mypage-React-Project//notion24.png" alt="stock"/></button></li>
+                    <li><button onClick={()=> window.open(tstory)}><img src="https://hongaproject.github.io/Mypage-React-Project//tstory24.png" alt="stock"/></button></li>
                 </ul>
             </div>
         </div>

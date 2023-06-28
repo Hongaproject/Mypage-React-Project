@@ -6,23 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Shopm from './components/Content/Shop/Shopm';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<App />}>
       <Route path="/shopm" element={<Shopm />} />
+      </Route>
     </Routes>
   </Router>
-  
-
-    // <Router>
-    //     <Routes>
-    //       <Route path="/" element={<Shop />}/>
-    //       <Route path="/Shpom" element={<Shopm />}/>
-    //     </Routes>
-    // </Router>
 
   // <React.StrictMode>
   // <App />
