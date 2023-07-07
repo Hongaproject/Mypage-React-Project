@@ -3,6 +3,11 @@
     border-radius: 2rem;
     /* background-color: #f0f0f0; */
     box-shadow: 2px 2px 2px 2px gray;
+    word-break: break-all;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .title{

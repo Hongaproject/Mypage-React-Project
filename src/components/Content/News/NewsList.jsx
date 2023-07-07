@@ -34,14 +34,16 @@ function NewsList () {
         return null;
     }
 
-
     return(
-        <NewsListStyle>
-            {articles.slice(0,5).map((article, index) => {
-                return<NewsItem Key={index} article={article}/>;
-            })}
-        </NewsListStyle>
-        
+            <NewsListStyle>
+                {articles.slice(0,5).map((article, id) => {
+                    return(
+                        <div key={id}>
+                            <NewsItem Key={article.id} article={article}/>
+                        </div>
+                    );
+                })}
+            </NewsListStyle>
     );
 }
 

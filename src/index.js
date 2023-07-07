@@ -10,7 +10,7 @@ import Shopm from './components/Content/Shop/Shopm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Routes>
       <Route path="/" element={<App />}>
       <Route path="/shopm" element={<Shopm />} />

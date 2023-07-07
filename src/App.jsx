@@ -5,6 +5,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
 import { GlobalStyles } from "./global";
 
+
 function App() {
 
   const [theme, setTheme] = useState('light');
@@ -26,9 +27,9 @@ function App() {
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Btn><button onClick={toggleTheme}>모드 변경</button></Btn>
-      <Layout>
-        <Main />
-      </Layout>
+        <Layout>
+          <Main />
+        </Layout>
     </ThemeProvider>
   );
 }
