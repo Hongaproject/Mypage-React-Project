@@ -19,7 +19,7 @@ function Shop () {
                     <a href="https://kream.co.kr/" target="_blank"><img src="/kreamT.png" alt="photo" /></a>
                 </div>
                 <button className={styles.btn1} onClick={clickShopMove}>더 많은 쇼핑몰 알아보기</button> <br />
-
+                
                 <h3>먹거리 및 생필품</h3>
                 <div>
                     <a href="https://www.tmon.co.kr/" target="_blank"><img src="/tmonT.png" alt="photo" /></a>

@@ -1,6 +1,5 @@
 .header{
     width: 100%;
-    /* background-color: blueviolet; */
     height: 200px;
 }
 
@@ -9,7 +8,6 @@
     top: 8%;
     left: 10%;
     display: flex;
-    /* background-color: aqua; */
     width: 80%;
     height: 75px;
 }
@@ -20,7 +18,6 @@
     height: 50px;
     justify-content: center;
     align-items: center;
-    /* background-color: beige; */
 }
 
 .search{

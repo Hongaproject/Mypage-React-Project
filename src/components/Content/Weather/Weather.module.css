@@ -2,10 +2,7 @@
     padding: 20px;
     border-radius: 2rem;
     box-shadow: 2px 2px 2px 2px gray;
-    height: 22%;
-    /* background: linear-gradient(lightCyan, skyBlue, deepSkyBlue); */
-    /* background: linear-gradient(deepSkyBlue, skyBlue, lightCyan); */
-    /* background-color: #f0f0f0; */
+    height: 25%;
 }
 
 .titleh2{

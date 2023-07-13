@@ -5,19 +5,19 @@ import styles from "./Movie.module.css";
 const key = process.env.REACT_APP_MOVIE_KEY;
  
 const getDate = new Date();
-const yDate = getDate.getTime(1 * 24 * 60 * 60 * 1000);
-getDate.setTime(yDate);
-var yYear = getDate.getFullYear();
-var yMonth = getDate.getMonth() + 1;
-var yDay = getDate.getDate() - 1;
+const todayDate = getDate.getTime(1 * 24 * 60 * 60 * 1000);
+getDate.setTime(todayDate);
+let Year = getDate.getFullYear();
+let Month = getDate.getMonth() + 1;
+let Day = getDate.getDate() - 1;
  
-if (yMonth < 10) {
-  yMonth = "0" + yMonth;
+if (Month < 10) {
+  Month = "0" + Month;
 }
-if (yDay < 10) {
-  yDay = "0" + yDay;
+if (Day < 10) {
+  Day = "0" + Day;
 }
-const resultDate = yYear + "-" + yMonth + "-" + yDay;
+const resultDate = Year + "-" + Month + "-" + Day;
  
 const res = resultDate.slice(0, 10).replace(/-/g, "");
  
