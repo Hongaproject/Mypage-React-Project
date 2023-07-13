@@ -1,8 +1,12 @@
+
+/* 리액트 개발시 height */
+/* 배포시 뉴스가 안나오는 관계로 height 지움 */
+
 .weatherMain{
     padding: 20px;
     border-radius: 2rem;
     box-shadow: 2px 2px 2px 2px gray;
-    height: 25%;
+    /* height: 25%; */
 }
 
 .titleh2{
